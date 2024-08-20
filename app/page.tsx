@@ -18,7 +18,7 @@ export default async function Home() {
         >
           <div className="flex lg:flex-1">
             <Link href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">Passkeys Demo</span>
               <BuildingStorefrontIcon className="size-12" />
             </Link>
           </div>
@@ -101,7 +101,7 @@ export default async function Home() {
           ) : (
             <div className="text-center">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                Simple Webauthn Site
+                Simple Passkeys Site
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
