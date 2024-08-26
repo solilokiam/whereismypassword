@@ -1,4 +1,2 @@
-export const rpId = process.env.VERCEL_URL || "localhost";
-export const origin = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : "http://localhost:3000";
+export const rpId = "whereismypassword.vercel.app";
+export const origin = "https://whereismypassword.vercel.app";
