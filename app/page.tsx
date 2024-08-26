@@ -22,7 +22,7 @@ export default async function Home() {
               <BuildingStorefrontIcon className="size-12" />
             </Link>
           </div>
-          <div className="hidden lg:flex lg:gap-x-12"></div>
+          <div className="flex gap-x-12"></div>
           <div className="flex flex-1">
             {!email ? (
               <Link
