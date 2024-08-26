@@ -16,27 +16,13 @@ export default async function Home() {
           aria-label="Global"
           className="flex items-center justify-between p-6 lg:px-8"
         >
-          <div className="flex lg:flex-1">
+          <div className="flex-1">
             <Link href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <BuildingStorefrontIcon className="size-12" />
             </Link>
           </div>
           <div className="flex gap-x-12"></div>
-          <div className="flex flex-1">
-            {!email ? (
-              <Link
-                href="/signin"
-                className="text-sm font-semibold leading-6 text-gray-900"
-              >
-                Log in <span aria-hidden="true">&rarr;</span>
-              </Link>
-            ) : (
-              <div className="text-sm font-semibold leading-6 text-gray-900">
-                {email}
-              </div>
-            )}
-          </div>
         </nav>
       </header>
 
@@ -116,7 +102,13 @@ export default async function Home() {
                   Get started
                 </Link>
                 <Link
-                  href="#"
+                  href="/signin"
+                  className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >
+                  Log in
+                </Link>
+                <Link
+                  href="https://github.com/solilokiam/whereismypassword"
                   className="text-sm font-semibold leading-6 text-gray-900"
                 >
                   Learn more <span aria-hidden="true">→</span>
