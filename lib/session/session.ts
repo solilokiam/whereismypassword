@@ -1,5 +1,5 @@
 import { cookies } from "next/headers";
-import { find, save } from "./sessionStorage";
+import { del, find, save } from "./sessionStorage";
 import { SessionData } from "./types";
 
 export const getSession = async (): Promise<{
@@ -21,6 +21,12 @@ export const getSession = async (): Promise<{
 
 export const closeSession = async () => {
   const cookieStore = cookies();
+
+  const sessionId = cookieStore.get("session-id");
+
+  if (sessionId?.value) {
+    const session = await del(sessionId.value);
+  }
 
   cookieStore.delete("session-id");
 };

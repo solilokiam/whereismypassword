@@ -10,3 +10,7 @@ export const find = async (id: string) => {
 export const save = async (id: string, data: SessionData) => {
   return kv.set(`${sessionPrefix}${id}`, JSON.stringify(data));
 };
+
+export const del = async (id: string) => {
+  return kv.del(`${sessionPrefix}${id}`);
+};
