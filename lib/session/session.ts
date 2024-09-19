@@ -19,6 +19,12 @@ export const getSession = async (): Promise<{
   return null;
 };
 
+export const closeSession = async () => {
+  const cookieStore = cookies();
+
+  cookieStore.delete("session-id");
+};
+
 export const getOrCreateSession = async (): Promise<{
   sessionId: string;
   data: SessionData;

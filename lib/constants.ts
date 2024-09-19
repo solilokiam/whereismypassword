@@ -1,2 +1,2 @@
-export const rpId = "whereismypassword.vercel.app";
-export const origin = "https://whereismypassword.vercel.app";
+export const rpId = "localhost";
+export const origin = "http://localhost:3000";
