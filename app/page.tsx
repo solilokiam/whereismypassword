@@ -2,6 +2,7 @@ import Link from "next/link";
 import { BuildingStorefrontIcon } from "@heroicons/react/24/outline";
 import { getSession } from "@/lib/session/session";
 import { find } from "@/lib/user/userStorage";
+import Logout from "@/components/logout";
 
 export default async function Home() {
   const session = await getSession();
@@ -64,12 +65,7 @@ export default async function Home() {
                 ))}
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
-                <Link
-                  href="/logout"
-                  className="text-sm font-semibold leading-6 text-gray-900"
-                >
-                  Logout
-                </Link>
+                <Logout />
               </div>
             </div>
           ) : (

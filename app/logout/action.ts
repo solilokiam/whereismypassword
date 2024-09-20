@@ -1,11 +1,10 @@
+"use server";
+
 import { closeSession } from "@/lib/session/session";
 import { revalidatePath } from "next/cache";
-import { redirect } from "next/navigation";
 
-export async function GET(request: Request) {
+export async function logout() {
   closeSession();
 
   revalidatePath("/");
-
-  redirect("/");
 }
