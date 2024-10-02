@@ -19,7 +19,7 @@ export default async function Home() {
         >
           <div className="flex-1">
             <Link href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">Passkeys Demo</span>
               <BuildingStorefrontIcon className="size-12" />
             </Link>
           </div>
